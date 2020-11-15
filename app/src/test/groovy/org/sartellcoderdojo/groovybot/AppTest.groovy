@@ -6,19 +6,11 @@ package org.sartellcoderdojo.groovybot
 import spock.lang.Specification
 
 class AppTest extends Specification {
-    def "application has a greeting"() {
+    def "application starts"() {
         setup:
         def app = new App()
 
         expect:
         app
-        app.firstGuild
-        app.firstChannel
-
-        and:
-        println(app.firstGuild)
-        println(app.firstChannel)
-
-
     }
 }
